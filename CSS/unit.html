@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS unit</title>
+    <style>
+        html{
+            font-size: 29px;
+        }
+        .wv-vh{
+            width: 100vw;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .pixel{
+            font-size: 16px;
+        }
+        .parent{
+            font-size: 20px;
+        }
+        .child{
+            font-size: 1.5em;
+        }
+        
+        .rem{
+            font-size: 1.25rem;
+        }
+        .per{
+            font-size: 120%;
+        }
+
+    </style>
+  </head>
+  <body>
+    <div class="wv-vh">
+      <h1>CSS Units</h1>
+      <p class="pixel">This paragraph has a font size in pixels.</p>
+      <div class="parent">
+        <p class="child">This paragraph in em unit.</p>
+      </div>
+      <p class="rem">This paragraph has a font size in rem units.</p>
+      <div class="per-parent">
+        <p class="per">This paragraph has a font size in percentage units.</p>
+      </div>
+    </div>
+  </body>
+</html>
