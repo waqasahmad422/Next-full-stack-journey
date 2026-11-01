@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .title{
+            color: blue;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .description{
+            color: gray;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        #unique{
+            color: red;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        p{
+            color: black;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        ul{
+            list-style-type: disc;
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+        a{
+            color: green;
+            text-decoration: none;
+            margin-bottom: 10px;
+        }
+        .box{
+            border: 1px solid black;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        ul li{
+            color: purple;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        ul + a{
+            color: orange;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        div ~ p{
+            color: brown;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="title">CSS Selectors</h1>
+    <p class="description">This is a paragraph with the class "description".</p>
+    <p id="unique">This is a paragraph with the ID "unique".</p>
+    <p>This is a paragraph without any class or ID.</p>
+    <ul>
+        <li>List item 1</li>
+        <li>List item 2</li>
+        <li>List item 3</li>
+    </ul>
+    <a href="#">This is a link</a>
+    <div class="box">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus nulla nobis a dolores amet esse nesciunt sint ipsum adipisci ducimus explicabo architecto aspernatur voluptatem praesentium, nihil temporibus voluptas doloremque necessitatibus eveniet repellat vero veniam?</p>
+        <p>This is another paragraph inside the box.</p>
+    </div>
+    <p>hik</p>
+    <p>adfsda</p>
+    <p>asfsd</p>
+    <p>ffsd</p>
+</body>
+</html>
