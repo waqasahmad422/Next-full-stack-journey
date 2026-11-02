@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MarbleFlow - Flexbox UI Showcase</title>
+
+  <!-- Font Awesome for the icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Link our CSS file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="page">
+
+    <!-- ========== 5.1 FLEXBOX NAVBAR ========== -->
+    <section class="box">
+      <h2 class="box-title">5.1 &nbsp;Flexbox Navbar</h2>
+
+      <nav class="navbar">
+        <div class="logo">
+          <i class="fa-solid fa-m logo-icon"></i>
+          <div>
+            <h3>MarbleFlow</h3>
+            <small>Manage • Track • Grow</small>
+          </div>
+        </div>
+
+        <ul class="nav-links">
+          <li class="active"><a href="#"><i class="fa-solid fa-house"></i> Home</a></li>
+          <li><a href="#"><i class="fa-solid fa-cube"></i> Products</a></li>
+          <li><a href="#"><i class="fa-solid fa-chart-simple"></i> Reports</a></li>
+          <li><a href="#"><i class="fa-solid fa-gear"></i> Settings</a></li>
+          <li><a href="#"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+        </ul>
+
+        <a href="#" class="btn btn-login"><i class="fa-solid fa-right-to-bracket"></i> Login</a>
+      </nav>
+    </section>
+
+
+    <!-- ========== ROW 2: 5.2 and 5.3 side by side ========== -->
+    <div class="row">
+
+      <!-- ========== 5.2 PERFECT CENTRING ========== -->
+      <section class="box box-small">
+        <h2 class="box-title">5.2 &nbsp;Perfect Centring</h2>
+
+        <div class="box-body">
+
+          <!-- Login card (centred inside a big area) -->
+          <div class="center-area">
+            <div class="login-card">
+              <div class="circle-icon"><i class="fa-solid fa-lock"></i></div>
+              <h3>Welcome Back</h3>
+              <p>Login to your account</p>
+
+              <div class="input-box">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" placeholder="Username">
+              </div>
+              <div class="input-box">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" placeholder="Password">
+              </div>
+
+              <button class="btn btn-full">Login</button>
+              <a href="#" class="forgot">Forgot Password?</a>
+            </div>
+          </div>
+
+          <!-- Three coloured items in a column -->
+          <div class="center-area">
+            <div class="login-card">
+              <div class="circle-icon"><i class="fa-solid fa-star"></i></div>
+
+              <a href="#" class="item item-blue"><i class="fa-solid fa-house"></i> First Item</a>
+              <a href="#" class="item item-green"><i class="fa-solid fa-gear"></i> Second Item</a>
+              <a href="#" class="item item-purple"><i class="fa-solid fa-envelope"></i> Third Item</a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- ========== 5.3 WRAPPING CARD ROW ========== -->
+      <section class="box box-big">
+        <h2 class="box-title">5.3 &nbsp;Wrapping Card Row</h2>
+
+        <div class="card-row">
+
+          <div class="card">
+            <img src="images/mountain.jpg" alt="Mountain">
+            <h3>Mountain Adventure</h3>
+            <p>Explore the beautiful mountains and nature.</p>
+            <a href="#" class="btn">Learn More</a>
+          </div>
+
+          <div class="card">
+            <img src="images/city.jpg" alt="City">
+            <h3>City Life</h3>
+            <p>Discover modern cities and culture.</p>
+            <a href="#" class="btn">Learn More</a>
+          </div>
+
+          <div class="card">
+            <img src="images/beach.jpg" alt="Beach">
+            <h3>Beach Paradise</h3>
+            <p>Relax on stunning beaches.</p>
+            <a href="#" class="btn">Learn More</a>
+          </div>
+
+          <div class="card">
+            <img src="images/forest.jpg" alt="Forest">
+            <h3>Forest Trails</h3>
+            <p>Walk through green forests.</p>
+            <a href="#" class="btn">Learn More</a>
+          </div>
+
+          <div class="card">
+            <img src="images/desert.jpg" alt="Desert">
+            <h3>Desert Journey</h3>
+            <p>Experience the desert life.</p>
+            <a href="#" class="btn">Learn More</a>
+          </div>
+
+          <div class="card">
+            <img src="images/snow.jpg" alt="Snowy mountains">
+            <h3>Snowy Peaks</h3>
+            <p>Feel the cold and beauty.</p>
+            <a href="#" class="btn">Learn More</a>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+
+
+    <!-- ========== ROW 3: 5.4 and 5.5 side by side ========== -->
+    <div class="row">
+
+      <!-- ========== 5.4 STICKY FOOTER PAGE LAYOUT ========== -->
+      <section class="box box-big">
+        <h2 class="box-title">5.4 &nbsp;Sticky-Footer Page Layout</h2>
+
+        <!-- This mini page uses flex-direction: column so the footer stays at the bottom -->
+        <div class="mini-page">
+
+          <header class="mini-header">
+            <div class="mini-logo"><i class="fa-solid fa-m"></i> MarbleFlow</div>
+            <ul class="mini-links">
+              <li>Home</li>
+              <li>Products</li>
+              <li>Reports</li>
+              <li>Contact</li>
+            </ul>
+            <a href="#" class="btn btn-small"><i class="fa-solid fa-right-to-bracket"></i> Login</a>
+          </header>
+
+          <div class="mini-main">
+
+            <aside class="sidebar">
+              <a href="#" class="side-active"><i class="fa-solid fa-house"></i> Dashboard</a>
+              <a href="#"><i class="fa-solid fa-cube"></i> Inventory</a>
+              <a href="#"><i class="fa-solid fa-chart-simple"></i> Sales</a>
+              <a href="#"><i class="fa-solid fa-wallet"></i> Expenses</a>
+              <a href="#"><i class="fa-solid fa-gear"></i> Settings</a>
+            </aside>
+
+            <main class="content">
+              <h3>Dashboard</h3>
+              <p class="subtitle">Welcome to MarbleFlow Factory Management System</p>
+
+              <div class="stats">
+                <div class="stat">
+                  <i class="fa-solid fa-cart-shopping" style="color:#1565e0"></i>
+                  <small>Total Sales</small>
+                  <strong>$12,480</strong>
+                </div>
+                <div class="stat">
+                  <i class="fa-solid fa-cube" style="color:#2e9e6b"></i>
+                  <small>Total Stock</small>
+                  <strong>8,500</strong>
+                </div>
+                <div class="stat">
+                  <i class="fa-solid fa-users" style="color:#7a4fd0"></i>
+                  <small>Customers</small>
+                  <strong>245</strong>
+                </div>
+                <div class="stat">
+                  <i class="fa-solid fa-arrow-trend-up" style="color:#f07a30"></i>
+                  <small>Profit</small>
+                  <strong>$4,320</strong>
+                </div>
+              </div>
+
+              <div class="chart-box">
+                <h4>Sales Overview</h4>
+                <!-- Simple line chart drawn with SVG -->
+                <svg viewBox="0 0 400 130" class="chart">
+                  <polygon points="10,110 80,80 150,50 220,65 290,40 380,25 380,120 10,120" fill="#dce8fb"/>
+                  <polyline points="10,110 80,80 150,50 220,65 290,40 380,25" fill="none" stroke="#1565e0" stroke-width="2"/>
+                  <circle cx="10" cy="110" r="3.5" fill="#1565e0"/>
+                  <circle cx="80" cy="80" r="3.5" fill="#1565e0"/>
+                  <circle cx="150" cy="50" r="3.5" fill="#1565e0"/>
+                  <circle cx="220" cy="65" r="3.5" fill="#1565e0"/>
+                  <circle cx="290" cy="40" r="3.5" fill="#1565e0"/>
+                  <circle cx="380" cy="25" r="3.5" fill="#1565e0"/>
+                </svg>
+                <div class="months">
+                  <span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span><span>May</span><span>Jun</span>
+                </div>
+              </div>
+            </main>
+
+          </div>
+
+          <footer class="mini-footer">
+            &copy; 2026 MarbleFlow. All rights reserved.
+          </footer>
+
+        </div>
+      </section>
+
+
+      <!-- ========== 5.5 ORDER AND ALIGN-SELF ========== -->
+      <section class="box box-small">
+        <h2 class="box-title">5.5 &nbsp;Order and Align-Self</h2>
+
+        <div class="box-body">
+
+          <div class="profile">
+            <!-- The text comes first in HTML, but "order" moves the photo to the right -->
+            <div class="profile-text">
+              <h3>Waqas Ahmad Shah</h3>
+              <h4>Web Developer &amp; Full Stack Developer</h4>
+              <p>Passionate about building modern web applications and creating better digital experiences.</p>
+              <a href="#" class="btn btn-pill">View Portfolio <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+            <img src="images/profile.jpg" alt="Waqas Ahmad Shah" class="profile-img">
+          </div>
+
+          <div class="info-box">
+            <i class="fa-solid fa-square-check"></i>
+            <div>
+              <h4>Flexbox Features Used:</h4>
+              <p>order (for responsive image/text order) and align-self (for the button alignment).</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
