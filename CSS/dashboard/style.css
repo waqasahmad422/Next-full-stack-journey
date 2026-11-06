@@ -1,0 +1,334 @@
+
+/* =========================
+   Universal Reset
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* =========================
+   Dashboard Layout
+========================= */
+.dashboard {
+    display: flex;
+}
+
+/* =========================
+   Sidebar
+========================= */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 100vh;
+    padding: 15px;
+    background-color: #ffffff;
+    box-shadow: 0px 5px 5px rgb(56, 50, 50, 0.2);
+    overflow-y: auto;
+}
+
+.sidebar h2 {
+    margin: 20px 0 0 7px;
+}
+
+.sidebar ul {
+    width: 100%;
+    margin-top: 15px;
+    list-style: none;
+}
+
+.sidebar ul li a {
+    display: block;
+    padding: 15px 10px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(134, 132, 132);
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    background-color: rgb(230, 252, 252);
+    color: purple;
+}
+
+.sidebar ul li:first-child a {
+    background-color: rgb(230, 252, 252);
+    color: purple;
+}
+
+/* =========================
+   Main Content
+========================= */
+.main-content {
+    width: 80%;
+    min-height: 100vh;
+    margin-left: 20%;
+    background-color: rgb(248, 246, 246);
+}
+
+/* =========================
+   Header
+========================= */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px 30px 30px;
+}
+
+.header span {
+    color: rgb(107, 102, 102);
+}
+
+/* =========================
+   Search Input
+========================= */
+.search {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    outline: none;
+}
+
+/* =========================
+   Button
+========================= */
+.btn {
+    margin-left: 10px;
+    padding: 13px 25px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    scale: 0.95;
+    cursor: pointer;
+}
+
+/* =========================
+   Cards Section
+========================= */
+.cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 25px;
+}
+
+.card-item {
+    width: 24%;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 0 3px 1px rgb(131, 124, 124, 0.3);
+}
+
+.card-item h5 {
+    color: gray;
+}
+
+.card-item h2 {
+    padding: 10px 0;
+}
+
+.card-item span {
+    color: rgb(43, 88, 43);
+    font-weight: 600;
+}
+
+.cards .card-item:last-child span {
+    color: red;
+}
+
+/* =========================
+   Image Container
+========================= */
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.image {
+    width: 50%;
+    padding: 20px;
+}
+
+img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+/* =========================
+   Large Tablets
+========================= */
+@media (max-width: 1024px) {
+    .sidebar {
+        width: 23%;
+    }
+
+    .main-content {
+        width: 77%;
+        margin-left: 23%;
+    }
+
+    .sidebar ul li a {
+        font-size: 16px;
+    }
+
+    .card-item {
+        padding: 15px;
+    }
+
+    .card-item h2 {
+        font-size: 20px;
+    }
+
+    .header {
+        padding: 20px;
+    }
+}
+
+/* =========================
+   Tablets
+========================= */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 25%;
+        padding: 10px;
+    }
+
+    .sidebar h2 {
+        font-size: 20px;
+    }
+
+    .sidebar ul li a {
+        font-size: 14px;
+        padding: 12px 8px;
+    }
+
+    .main-content {
+        width: 75%;
+        margin-left: 25%;
+    }
+
+    .header {
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .search {
+        width: 140px;
+    }
+
+    .btn {
+        padding: 12px 15px;
+    }
+
+    .cards {
+        flex-wrap: wrap;
+    }
+
+    .card-item {
+        width: 48%;
+    }
+
+    .container {
+        flex-wrap: wrap;
+    }
+
+    .image {
+        width: 100%;
+    }
+}
+
+/* =========================
+   Mobile Devices
+========================= */
+@media (max-width: 576px) {
+    .sidebar {
+        display: none;
+    }
+
+    .main-content {
+        width: 100%;
+        margin: 0;
+    }
+
+    form {
+        display: none;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .cards {
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .card-item {
+        width: 100%;
+    }
+
+    .container {
+        flex-wrap: wrap;
+    }
+
+    .image {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+/* =========================
+   Small Mobile Devices
+========================= */
+@media (max-width: 375px) {
+    .header h1 {
+        font-size: 22px;
+    }
+
+    .header span {
+        font-size: 13px;
+    }
+
+    .cards {
+        padding: 10px;
+    }
+
+    .card-item {
+        padding: 15px;
+    }
+
+    .card-item h2 {
+        font-size: 20px;
+    }
+
+    .image {
+        padding: 10px;
+    }
+}
